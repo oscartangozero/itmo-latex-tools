@@ -1,10 +1,10 @@
-.PHONY: example example-report example-flowchart install uninstall
+.PHONY: examples example-report example-flowchart install uninstall clean
 
 TARGETS := itmo-report.cls itmo-flowchart.sty
 TEMPLATES := example-report.tex example-flowchart.tex
 
-INSTALL_TARGETS_DIR=~/texmf/tex/latex/local
-INSTALL_TEMPLATES_DIR=~/templates
+INSTALL_TARGETS_DIR := ~/texmf/tex/latex/local
+INSTALL_TEMPLATES_DIR := ~/templates
 
 examples: example-report example-flowchart
 example-report: out/example-report.pdf
