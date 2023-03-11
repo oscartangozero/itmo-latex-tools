@@ -1,0 +1,22 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{itmo-flowchart}
+
+\RequirePackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows, positioning}
+\tikzset{
+    terminal/.style={
+            rectangle, rounded corners, draw=black,
+            minimum width=3cm, minimum height=1cm
+        },
+    io/.style={
+            trapezium, trapezium left angle=70, trapezium right angle=110, draw=black,
+            trapezium stretches=true, minimum width=3cm, minimum height=1cm
+        },
+    process/.style = {
+            rectangle, draw=black, minimum width=3cm, minimum height=1cm
+        },
+    decision/.style = {
+            diamond, aspect=4, minimum width=3cm, minimum height=1cm, draw=black
+        },
+    arrow/.style = {thick,->,>=stealth}
+}
